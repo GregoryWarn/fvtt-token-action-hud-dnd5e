@@ -1,104 +1,102 @@
 {
   "tokenActionHud": {
     "dnd5e": {
-      "1stLevelSpells": "1st Level Spells",
-      "2ndLevelSpells": "2nd Level Spells",
-      "3rdLevelSpells": "3rd Level Spells",
-      "4thLevelSpells": "4th Level Spells",
-      "5thLevelSpells": "5th Level Spells",
-      "6thLevelSpells": "6th Level Spells",
-      "7thLevelSpells": "7th Level Spells",
-      "8thLevelSpells": "8th Level Spells",
-      "9thLevelSpells": "9th Level Spells",
+     "1stLevelSpells": "1环法术",
+     "2ndLevelSpells": "2环法术",
+     "3rdLevelSpells": "3环法术", 
+     "4thLevelSpells": "4环法术",
+     "5thLevelSpells": "5环法术",
+     "6thLevelSpells": "6环法术",
+     "7thLevelSpells": "7环法术",
+     "8thLevelSpells": "8环法术",
+     "9thLevelSpells": "9环法术",
       "abilities": "属性",
-      "activeFeatures": "Active Features",
-      "artifact": "Artifact",
-      "artificerInfusions": "Artificer Infusions",
-      "atWillSpells": "At-Will Spells",
-      "backgroundFeatures": "Background Features",
-      "bonusActions": "獎勵行動",
-      "cantrips": "Cantrips",
-      "channelDivinity": "Channel Divinity",
-      "check": "Check",
+      "activeFeatures": "激活特性",
+      "artifact": "奇物",
+      "artificerInfusions": "奇械师注法",
+      "atWillSpells": "随意法术",
+      "backgroundFeatures": "背景特性",
+      "bonusActions": "奖励动作",
+      "cantrips": "戏法",
+      "channelDivinity": "引导神力",
+      "check": "检定",
       "checks": "检定",
-      "classFeatures": "Class Features",
-      "common": "Common",
-      "condition": "Condition",
+      "classFeatures": "职业特性",
+      "common": "通用",
+      "condition": "状态",
       "conditions": "状态",
       "counter": " 计分器",
       "counters": "计分牌",
-      "crewActions": "船員行動",
-      "defensiveTactics": "Defensive Tactics",
-      "eldritchInvocations": "Eldritch Invocations",
-      "elementalDisciplines": "Elemental Disciplines",
-      "equip": "Equip",
-      "favorites": "Favorites",
-      "feats": "Feats",
-      "fightingStyles": "Fighting Styles",
-      "huntersPrey": "Hunter's Prey",
-      "innateSpells": "Innate Spells",
-      "item": "Item",
-      "kiAbilities": "Ki Abilities",
+      "crewActions": "船员行动",
+      "defensiveTactics": "防守战术",
+      "eldritchInvocations": "魔能祈唤",
+      "elementalDisciplines": "法门",
+      "feats": "专长",
+      "fightingStyles": "战斗风格",
+      "huntersPrey": "猎物",
+      "innateSpells": "先天法术",
+      "item": "物品",
+      "kiAbilities": "气能力",
       "lair": "巢穴",
       "lairActions": "巢穴行動",
       "legendary": "传奇",
       "legendaryActions": "傳奇動作",
-      "limitedSpells": "Limited Spells",
-      "maneuvers": "Maneuvers",
-      "metamagicOptions": "Metamagic Options",
-      "monsterFeatures": "Monster Features",
-      "multiattacks": "Multiattacks",
-      "noAction": "No Action",
-      "otherActions": "其他行為",
-      "pactBoons": "Pact Boons",
-      "pactSpells": "Pact Spells",
-      "passiveFeatures": "Passive Features",
-      "psionicPowers": "Psionic Powers",
-      "raceFeatures": "Race Features",
-      "rare": "Rare",
+      "magicItems": "魔法物品",
+      "maneuvers": "战技",
+      "metamagicOptions": "超魔选项",
+      "monsterFeatures": "怪物特性",
+      "multiattacks": "多重攻击",
+      "otherActions": "其他动作",
+      "pactBoons": "魔契恩泽",
+      "pactSpells": "魔契法术",
+      "passiveFeatures": "被动特性",
+      "psionicPowers": "灵能",
+      "raceFeatures": "种族特性",
+      "rare": "珍惜",
       "rests": "休息",
       "rollInitiative": "先攻掷骰",
-      "runes": "Runes",
+      "runes": "符文",
+      "skill": "技能",
+      "skills": "技能",
+      "superiorHuntersDefense": "高效猎人防术",
+      "uncommon": "罕见",
+      "veryRare": "极珍惜",
       "settings": {
-        "abbreviateSkills": {
-          "hint": "Display skill and ability names as a three-character abbreviation",
-          "name": "Abbreviate Skill and Ability Names"
+       "abbreviateSkills": {
+          "hint": "将技能与属性名称缩写为三字符",
+          "name": "缩写技能与属性名称"
         },
-        "displaySpellInfo": {
-          "hint": "Display spell component information, concentration, and ritual status next to the spell's name",
-          "name": "Display Spell Information"
+       "displaySpellInfo": {
+          "hint": "在法术名称旁边显示成分、专注、仪式",
+          "name": "显示法术信息"
         },
-        "showActivitiesAsActions": {
-          "hint": "Show each activity on an item as its own action. When clicking an activity action, the activity is executed directly. When disabled, each item is a single action and clicking the action will display the activity selection window (unless skipped).",
-          "name": "Show Activities as Actions"
-        },
-        "showItemsWithoutActivationCosts": {
-          "hint": "Show items with an Activation Cost of \"None\".",
-          "name": "Show Items without Activation Costs"
+       "showItemsWithoutActivationCosts": {
+          "hint": "显示不激活消耗的物品",
+          "name": "显示非激活物品"
         },
         "showSlowActions": {
-          "hint": "Show actions that take longer than one round.",
-          "name": "Show Slow Actions"
+          "hint": "显示超出一轮的动作",
+          "name": "显示缓慢动作"
         },
         "showSpellsAcrossGroups": {
           "hint": "Show each spell in every spell-slot group it can be cast from. When disabled, spells appear only in their base spell-slot group.",
           "name": "Show Spells in All Castable Groups"
         },
         "showUnchargedItems": {
-          "hint": "Show items with no charges remaining.",
-          "name": "Show Uncharged Items"
+          "hint": "显示耗尽充能次数的物品",
+          "name": "显示无充能物品"
         },
         "showUnequippedItems": {
-          "hint": "For player characters, show unequipped inventory items. When disabled, only equipped inventory items are shown.",
-          "name": "Show Unequipped Items for PCs"
+          "hint": "显示未装备物品",
+          "name": "显示未装备物品"
         },
         "showUnequippedItemsNpcs": {
-          "hint": "For NPCs, show unequipped inventory items. When disabled, only equipped inventory items are shown.",
-          "name": "Show Unequipped Items for NPCs"
+          "hint": "显示 NPC 未装备物品",
+          "name": "显示 NPC 未装备物品"
         },
         "showUnpreparedSpells": {
-          "hint": "Show unprepared spells.",
-          "name": "Show Unprepared Spells"
+          "hint": "显示未装备法术",
+          "name": "显示未装备法术"
         }
       },
       "skill": "Skill",
