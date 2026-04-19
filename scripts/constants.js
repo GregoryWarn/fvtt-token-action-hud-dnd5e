@@ -19,7 +19,7 @@ export const CORE_MODULE = {
 /**
  * Core module version required by the system module
  */
-export const REQUIRED_CORE_MODULE_VERSION = "2.0";
+export const REQUIRED_CORE_MODULE_VERSION = "2";
 
 /* -------------------------------------------- */
 
@@ -38,6 +38,7 @@ export const ACTION_TYPE = {
   save: "DND5E.SAVE.Title.one",
   skill: "tokenActionHud.dnd5e.skill",
   spell: "TYPES.Item.spell",
+  tool: "TYPES.Item.tool",
   utility: "DND5E.ActionUtil"
 };
 
@@ -59,6 +60,7 @@ export const ACTIVATION_TYPE = {
   reactiondamage: { group: "reactions", icon: "fas fa-bolt" },
   reactionmanual: { group: "reactions", icon: "fas fa-bolt" },
   special: { group: "special-actions", icon: "fas fa-star" },
+  none: { group: "no-action" },
   other: { group: "other-actions" }
 };
 
@@ -149,6 +151,7 @@ export const GROUP = {
   equipment: { id: "equipment", name: "TYPES.Item.equipmentPl", type: "system" },
   equipped: { id: "equipped", name: "DND5E.Equipped", type: "system" },
   exhaustion: { id: "exhaustion", name: "DND5E.Exhaustion", type: "system" },
+  favorites: { id: "favorites", name: "tokenActionHud.dnd5e.favorites", type: "system" },
   feats: { id: "feats", name: "tokenActionHud.dnd5e.feats", type: "system" },
   fightingStyles: { id: "fighting-styles", name: "tokenActionHud.dnd5e.fightingStyles", type: "system" },
   huntersPrey: { id: "hunters-prey", name: "tokenActionHud.dnd5e.huntersPrey", type: "system" },
@@ -156,11 +159,13 @@ export const GROUP = {
   kiAbilities: { id: "ki-abilities", name: "tokenActionHud.dnd5e.kiAbilities", type: "system" },
   lairActions: { id: "lair-actions", name: "tokenActionHud.dnd5e.lairActions", type: "system" },
   legendaryActions: { id: "legendary-actions", name: "tokenActionHud.dnd5e.legendaryActions", type: "system" },
+  limitedSpells: { id: "limited-spells", name: "tokenActionHud.dnd5e.limitedSpells", type: "system" },
   loot: { id: "loot", name: "TYPES.Item.lootPl", type: "system" },
   maneuvers: { id: "maneuvers", name: "tokenActionHud.dnd5e.maneuvers", type: "system" },
   metamagicOptions: { id: "metamagic-options", name: "tokenActionHud.dnd5e.metamagicOptions", type: "system" },
   monsterFeatures: { id: "monster-features", name: "tokenActionHud.dnd5e.monsterFeatures", type: "system" },
   multiattacks: { id: "multiattacks", name: "tokenActionHud.dnd5e.multiattacks", type: "system" },
+  noAction: { id: "no-action", name: "tokenActionHud.dnd5e.noAction", type: "system" },
   otherActions: { id: "other-actions", name: "tokenActionHud.dnd5e.otherActions", type: "system" },
   pactBoons: { id: "pact-boons", name: "tokenActionHud.dnd5e.pactBoons", type: "system" },
   pactSpells: { id: "pact-spells", name: "tokenActionHud.dnd5e.pactSpells", spellMode: "pact", type: "system" },
@@ -241,5 +246,6 @@ export const SPELL_GROUP_IDS = [
   "atWillSpells",
   "innateSpells",
   "pactSpells",
-  "additionalSpells"
+  "additionalSpells",
+  "limitedSpells"
 ];

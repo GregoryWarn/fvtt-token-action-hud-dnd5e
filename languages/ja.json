@@ -31,6 +31,8 @@
       "defensiveTactics": "守りの技",
       "eldritchInvocations": "妖術",
       "elementalDisciplines": "元素の技法",
+      "equip": "Equip",
+      "favorites": "Favorites",
       "feats": "特技",
       "fightingStyles": "戦闘スタイル",
       "huntersPrey": "狩りの技",
@@ -41,11 +43,12 @@
       "lairActions": "住処アクション",
       "legendary": "伝説",
       "legendaryActions": "伝説的アクション",
-      "magicItems": "魔法アイテム",
+      "limitedSpells": "Limited Spells",
       "maneuvers": "戦技",
       "metamagicOptions": "呪文修正",
       "monsterFeatures": "モンスター特徴",
       "multiattacks": "複数回攻撃",
+      "noAction": "No Action",
       "otherActions": "その他のアクション",
       "pactBoons": "契約の恩恵",
       "pactSpells": "契約呪文",
@@ -56,11 +59,6 @@
       "rests": "休憩",
       "rollInitiative": "イニシアチブロール",
       "runes": "ルーン",
-      "skill": "技能",
-      "skills": "技能",
-      "superiorHuntersDefense": "上級の守りの技",
-      "uncommon": "アンコモン",
-      "veryRare": "ヴェリーレア",
       "settings": {
         "abbreviateSkills": {
           "hint": "技能および能力の名前を略語で表示します",
@@ -70,6 +68,10 @@
           "hint": "呪文名の横に、呪文の構成要素の情報、集中、儀式のステータスを表示します",
           "name": "呪文情報を表示"
         },
+        "showActivitiesAsActions": {
+          "hint": "Show each activity on an item as its own action. When clicking an activity action, the activity is executed directly. When disabled, each item is a single action and clicking the action will display the activity selection window (unless skipped).",
+          "name": "Show Activities as Actions"
+        },
         "showItemsWithoutActivationCosts": {
           "hint": "発動コストなしのアイテムを表示します",
           "name": "発動コストなしのアイテムを表示"
@@ -77,6 +79,10 @@
         "showSlowActions": {
           "hint": "1ラウンド以上かかるアクションを表示します",
           "name": "遅いアクションを表示"
+        },
+        "showSpellsAcrossGroups": {
+          "hint": "Show each spell in every spell-slot group it can be cast from. When disabled, spells appear only in their base spell-slot group.",
+          "name": "Show Spells in All Castable Groups"
         },
         "showUnchargedItems": {
           "hint": "チャージが残っていないアイテムを表示します",
@@ -94,7 +100,14 @@
           "hint": "未準備の呪文を表示します",
           "name": "未準備の呪文を表示"
         }
-      }
+      },
+      "skill": "技能",
+      "skills": "技能",
+      "superiorHuntersDefense": "上級の守りの技",
+      "uncommon": "アンコモン",
+      "unequip": "Unequip",
+      "veryRare": "ヴェリーレア",
+      "viewItem": "View Item"
     }
   }
 }

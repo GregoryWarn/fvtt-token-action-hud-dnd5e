@@ -78,6 +78,10 @@
           "hint": "显示超出一轮的动作",
           "name": "显示缓慢动作"
         },
+        "showSpellsAcrossGroups": {
+          "hint": "Show each spell in every spell-slot group it can be cast from. When disabled, spells appear only in their base spell-slot group.",
+          "name": "Show Spells in All Castable Groups"
+        },
         "showUnchargedItems": {
           "hint": "显示耗尽充能次数的物品",
           "name": "显示无充能物品"
@@ -94,7 +98,14 @@
           "hint": "显示未装备法术",
           "name": "显示未装备法术"
         }
-      }
+      },
+      "skill": "Skill",
+      "skills": "技能",
+      "superiorHuntersDefense": "Superior Hunter's Defense",
+      "uncommon": "Uncommon",
+      "unequip": "Unequip",
+      "veryRare": "Very Rare",
+      "viewItem": "View Item"
     }
   }
 }

@@ -57,10 +57,10 @@ Hooks.once("tokenActionHudCoreApiReady", async coreModule => {
           if (this.isRenderItem()) this.renderItem(actor, actionId);
           else this.useItem(event, actor, actionId);
           break;
-        case "magicItem":
-          await this.rollMagicItem(actor, actionId); break;
         case "skill":
           this.rollSkill(event, actor, actionId); break;
+        case "tool":
+          this.rollToolCheck(event, actor, actionId); break;
         case "utility":
           await this.performUtilityAction(event, actor, token, actionId); break;
         default:
@@ -214,7 +214,7 @@ Hooks.once("tokenActionHudCoreApiReady", async coreModule => {
       }
     }
 
-    /* -------------------------------------------- */Russe
+    /* -------------------------------------------- */
 
     /**
      * Roll Death Save
@@ -224,24 +224,6 @@ Hooks.once("tokenActionHudCoreApiReady", async coreModule => {
      */
     rollDeathSave(event, actor) {
       actor.rollDeathSave({ event });
-    }
-
-    /* -------------------------------------------- */
-
-    /**
-     * Roll Magic Item
-     * @private
-     * @param {object} actor    The actor
-     */
-    async rollMagicItem(actor) {
-      const { itemId, effectId } = this.action.system;
-
-      const magicItemActor = await MagicItems.actor(actor.id);
-      if (!magicItemActor) return;
-
-      // Magicitems module 3.0.0 does not support Item5e#use
-      magicItemActor.roll(itemId, effectId);
-      Hooks.callAll("forceUpdateTokenActionHud");
     }
 
     /* -------------------------------------------- */
@@ -261,6 +243,20 @@ Hooks.once("tokenActionHudCoreApiReady", async coreModule => {
     /* -------------------------------------------- */
 
     /**
+     * Roll Tool Check
+     * @private
+     * @param {object} event    The event
+     * @param {object} actor    The actor
+     * @param {string} actionId The tool key
+     */
+    rollToolCheck(event, actor, actionId) {
+      if (!actor.system?.tools) return;
+      actor.rollToolCheck({ tool: actionId, event });
+    }
+
+    /* -------------------------------------------- */
+
+    /**
      * Use Item
      * @private
      * @param {object} event    The event
@@ -272,9 +268,19 @@ Hooks.once("tokenActionHudCoreApiReady", async coreModule => {
 
       if (this.#needsRecharge(item)) {
         item.rollRecharge();
-      } else {
-        item.use({ event, legacy: false });
+        return;
       }
+
+      const { activityId, spellSlot } = this.action?.system ?? {};
+      const activity = activityId ? item?.system?.activities?.get(activityId) : null;
+      if (activity) {
+        activity.use({ event });
+        return;
+      }
+
+      const usage = { event, legacy: false };
+      if (spellSlot) usage.spell = { slot: spellSlot };
+      item.use(usage);
     }
 
     /* -------------------------------------------- */
@@ -418,7 +424,7 @@ Hooks.once("tokenActionHudCoreApiReady", async coreModule => {
      * @param {object} event The event
      */
     async handleActionHover(event) {
-      const types = ["feature", "item", "spell", "weapon", "magicItem"];
+      const types = ["feature", "item", "spell", "weapon"];
 
       if (!this.actor || !this.action?.system?.actionId) return;
 
