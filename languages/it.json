@@ -19,20 +19,20 @@
       "bonusActions": "Azioni bonus",
       "cantrips": "Trucchetti",
       "channelDivinity": "Incanalare Divinità",
-      "check": "Caratteristica",
-      "checks": "Caratteristiche",
+      "check": "Prova",
+      "checks": "Prove",
       "classFeatures": "Privilegi di Classe",
       "common": "Comune",
       "condition": "Condizione",
       "conditions": "Condizioni",
-      "counter": "Segnalino",
-      "counters": "Segnalini",
+      "counter": "Contatore",
+      "counters": "Contatori",
       "crewActions": "Azioni di gruppo",
       "defensiveTactics": "Tattiche Difensive",
       "eldritchInvocations": "Suppliche Occulte",
       "elementalDisciplines": "Discipline elementali",
-      "equip": "Equip",
-      "favorites": "Favorites",
+      "equip": "Equipaggia",
+      "favorites": "Preferiti",
       "feats": "Talenti",
       "fightingStyles": "Stili di Combattimento",
       "huntersPrey": "Preda del Cacciatore",
@@ -43,12 +43,12 @@
       "lairActions": "Azioni di Tana",
       "legendary": "Leggendarie",
       "legendaryActions": "Azioni Leggendarie",
-      "limitedSpells": "Limited Spells",
+      "limitedSpells": "Incantesimi Limitati",
       "maneuvers": "Manovre",
       "metamagicOptions": "Opzioni di Metamagia",
       "monsterFeatures": "Privilegi dei Mostri",
       "multiattacks": "Multiattacco",
-      "noAction": "No Action",
+      "noAction": "Nessuna Azione",
       "otherActions": "Altre azioni",
       "pactBoons": "Doni del Patto",
       "pactSpells": "Incantesimi del Patto",
@@ -69,8 +69,8 @@
           "name": "Mostra Informazioni Incantesimo"
         },
         "showActivitiesAsActions": {
-          "hint": "Show each activity on an item as its own action. When clicking an activity action, the activity is executed directly. When disabled, each item is a single action and clicking the action will display the activity selection window (unless skipped).",
-          "name": "Show Activities as Actions"
+          "hint": "Visualizza ogni attività relativa a un elemento come un'azione a sé stante. Facendo clic su un'azione, questa viene eseguita direttamente. Quando questa opzione è disabilitata, ogni elemento rappresenta una singola azione e facendo clic sull'azione verrà visualizzata la finestra di selezione dell'attività (a meno che non venga saltata).",
+          "name": "Mostra Attività come Azioni"
         },
         "showItemsWithoutActivationCosts": {
           "hint": "Mostra Oggetti senza Costo di Attivazione",
@@ -81,8 +81,8 @@
           "name": "Mostra Azioni Lente"
         },
         "showSpellsAcrossGroups": {
-          "hint": "Show each spell in every spell-slot group it can be cast from. When disabled, spells appear only in their base spell-slot group.",
-          "name": "Show Spells in All Castable Groups"
+          "hint": "Mostra ogni incantesimo in tutti i gruppi di slot incantesimo da cui può essere lanciato. Quando disabilitata, gli incantesimi vengono visualizzati solo nel loro gruppo di slot incantesimo base.",
+          "name": "Mostra Incantesimi in tutti i gruppi da cui si possono lanciare"
         },
         "showUnchargedItems": {
           "hint": "Mostra oggetti senza cariche rimanenti",
@@ -105,9 +105,9 @@
       "skills": "Abilità",
       "superiorHuntersDefense": "Difesa Superiore del Cacciatore",
       "uncommon": "Non Comune",
-      "unequip": "Unequip",
+      "unequip": "Disequipaggia",
       "veryRare": "Molto Raro",
-      "viewItem": "View Item"
+      "viewItem": "Visualizza Oggetto"
     }
   }
 }
